@@ -1,0 +1,12 @@
+E:\files\Billing\server\server\bin\Debug\server.dll
+E:\files\Billing\server\server\bin\Debug\server.pdb
+E:\files\Billing\server\server\obj\Debug\ResolveAssemblyReference.cache
+E:\files\Billing\server\server\obj\Debug\server.dll
+E:\files\Billing\server\server\obj\Debug\server.pdb
+E:\files\Billing\server\server\bin\Debug\MySql.Data.dll
+E:\files\bill\Billing\server\server\bin\Debug\server.dll
+E:\files\bill\Billing\server\server\bin\Debug\server.pdb
+E:\files\bill\Billing\server\server\bin\Debug\MySql.Data.dll
+E:\files\bill\Billing\server\server\obj\Debug\ResolveAssemblyReference.cache
+E:\files\bill\Billing\server\server\obj\Debug\server.dll
+E:\files\bill\Billing\server\server\obj\Debug\server.pdb

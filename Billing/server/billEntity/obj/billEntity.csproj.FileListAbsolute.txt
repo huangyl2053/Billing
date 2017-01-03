@@ -1,0 +1,10 @@
+E:\files\Billing\server\billEntity\bin\Debug\billEntity.dll
+E:\files\Billing\server\billEntity\bin\Debug\billEntity.pdb
+E:\files\Billing\server\billEntity\obj\Debug\ResolveAssemblyReference.cache
+E:\files\Billing\server\billEntity\obj\Debug\billEntity.dll
+E:\files\Billing\server\billEntity\obj\Debug\billEntity.pdb
+E:\files\bill\Billing\server\billEntity\bin\Debug\billEntity.dll
+E:\files\bill\Billing\server\billEntity\bin\Debug\billEntity.pdb
+E:\files\bill\Billing\server\billEntity\obj\Debug\ResolveAssemblyReference.cache
+E:\files\bill\Billing\server\billEntity\obj\Debug\billEntity.dll
+E:\files\bill\Billing\server\billEntity\obj\Debug\billEntity.pdb
