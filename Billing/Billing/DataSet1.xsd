@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://tempuri.org/DataSet.xsd" xmlns:mstns="http://tempuri.org/DataSet.xsd" xmlns="http://tempuri.org/DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet" msprop:Generator_DataSetName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="table" msdata:CaseSensitive="False" msprop:Generator_UserTableName="table" msprop:Generator_RowDeletedName="tableRowDeleted" msprop:Generator_RowChangedName="tableRowChanged" msprop:Generator_RowClassName="tableRow" msprop:Generator_RowChangingName="tableRowChanging" msprop:Generator_RowEvArgName="tableRowChangeEvent" msprop:Generator_RowEvHandlerName="tableRowChangeEventHandler" msprop:Generator_TableClassName="tableDataTable" msprop:Generator_TableVarName="tabletable" msprop:Generator_RowDeletingName="tableRowDeleting" msprop:Generator_TablePropName="table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="datetime" msdata:ReadOnly="true" msprop:Generator_UserColumnName="datetime" msprop:Generator_ColumnPropNameInRow="datetime" msprop:Generator_ColumnVarNameInTable="columndatetime" msprop:Generator_ColumnPropNameInTable="datetimeColumn" type="xs:string" />
+              <xs:element name="Tip1" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Tip1" msprop:Generator_ColumnPropNameInRow="Tip1" msprop:Generator_ColumnVarNameInTable="columnTip1" msprop:Generator_ColumnPropNameInTable="Tip1Column" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="Tip2" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Tip2" msprop:Generator_ColumnPropNameInRow="Tip2" msprop:Generator_ColumnVarNameInTable="columnTip2" msprop:Generator_ColumnPropNameInTable="Tip2Column" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="Tip3" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Tip3" msprop:Generator_ColumnPropNameInRow="Tip3" msprop:Generator_ColumnVarNameInTable="columnTip3" msprop:Generator_ColumnPropNameInTable="Tip3Column" type="xs:string" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="tableKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:table" />
+      <xs:field xpath="mstns:datetime" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

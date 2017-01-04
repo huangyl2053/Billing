@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billing", "Billing\Billing.csproj", "{8C418C30-0B07-4737-9CCA-B1D9161B921B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "billEntity", "billEntity\billEntity.csproj", "{935AC43E-3B80-42B4-AA03-3F671A9B5842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "serverTest", "server\serverTest.csproj", "{AD5A27FB-7D6A-4BF8-BEF9-DB8D9362EB90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C418C30-0B07-4737-9CCA-B1D9161B921B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C418C30-0B07-4737-9CCA-B1D9161B921B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C418C30-0B07-4737-9CCA-B1D9161B921B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C418C30-0B07-4737-9CCA-B1D9161B921B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{935AC43E-3B80-42B4-AA03-3F671A9B5842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{935AC43E-3B80-42B4-AA03-3F671A9B5842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{935AC43E-3B80-42B4-AA03-3F671A9B5842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{935AC43E-3B80-42B4-AA03-3F671A9B5842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD5A27FB-7D6A-4BF8-BEF9-DB8D9362EB90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD5A27FB-7D6A-4BF8-BEF9-DB8D9362EB90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD5A27FB-7D6A-4BF8-BEF9-DB8D9362EB90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD5A27FB-7D6A-4BF8-BEF9-DB8D9362EB90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
