@@ -20,12 +20,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\fnl\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Infragistics2.Shared.v7.1, Version=7.1.20071.1061, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
@@ -102,9 +103,9 @@
       <Project>{935AC43E-3B80-42B4-AA03-3F671A9B5842}</Project>
       <Name>billEntity</Name>
     </ProjectReference>
-    <ProjectReference Include="..\server\serverTest.csproj">
+    <ProjectReference Include="..\server\server.csproj">
       <Project>{AD5A27FB-7D6A-4BF8-BEF9-DB8D9362EB90}</Project>
-      <Name>serverTest</Name>
+      <Name>server</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

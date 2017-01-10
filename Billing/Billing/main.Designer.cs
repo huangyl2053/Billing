@@ -49,10 +49,18 @@
             this.search = new Infragistics.Win.Misc.UltraButton();
             this.Grid = new Infragistics.Win.UltraWinGrid.UltraGrid();
             this.save = new Infragistics.Win.Misc.UltraButton();
+            this.Label_Total = new Infragistics.Win.Misc.UltraLabel();
+            this.ultraLabel1 = new Infragistics.Win.Misc.UltraLabel();
+            this.Text_TipName1 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.Text_TipName2 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.Text_TipName3 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             ((System.ComponentModel.ISupportInitialize)(this.Text_Tip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Text_Tip2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Text_Tip3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Text_TipName1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Text_TipName2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Text_TipName3)).BeginInit();
             this.SuspendLayout();
             // 
             // Lable_Tip1
@@ -66,17 +74,17 @@
             // 
             // Text_Tip1
             // 
-            this.Text_Tip1.Location = new System.Drawing.Point(120, 50);
+            this.Text_Tip1.Location = new System.Drawing.Point(264, 48);
             this.Text_Tip1.Name = "Text_Tip1";
-            this.Text_Tip1.Size = new System.Drawing.Size(100, 21);
-            this.Text_Tip1.TabIndex = 1;
+            this.Text_Tip1.Size = new System.Drawing.Size(53, 21);
+            this.Text_Tip1.TabIndex = 4;
             // 
             // Text_Tip2
             // 
-            this.Text_Tip2.Location = new System.Drawing.Point(120, 90);
+            this.Text_Tip2.Location = new System.Drawing.Point(264, 88);
             this.Text_Tip2.Name = "Text_Tip2";
-            this.Text_Tip2.Size = new System.Drawing.Size(100, 21);
-            this.Text_Tip2.TabIndex = 3;
+            this.Text_Tip2.Size = new System.Drawing.Size(53, 21);
+            this.Text_Tip2.TabIndex = 13;
             // 
             // Lable_Tip2
             // 
@@ -89,10 +97,10 @@
             // 
             // Text_Tip3
             // 
-            this.Text_Tip3.Location = new System.Drawing.Point(120, 126);
+            this.Text_Tip3.Location = new System.Drawing.Point(264, 124);
             this.Text_Tip3.Name = "Text_Tip3";
-            this.Text_Tip3.Size = new System.Drawing.Size(100, 21);
-            this.Text_Tip3.TabIndex = 5;
+            this.Text_Tip3.Size = new System.Drawing.Size(53, 21);
+            this.Text_Tip3.TabIndex = 23;
             // 
             // Lable_Tip3
             // 
@@ -105,10 +113,10 @@
             // 
             // search
             // 
-            this.search.Location = new System.Drawing.Point(364, 49);
+            this.search.Location = new System.Drawing.Point(364, 48);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(75, 23);
-            this.search.TabIndex = 6;
+            this.search.TabIndex = 43;
             this.search.Text = "search";
             this.search.Click += new System.EventHandler(this.search_Click);
             // 
@@ -138,7 +146,7 @@
             appearance12.BackColor = System.Drawing.SystemColors.Window;
             appearance12.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Grid.DisplayLayout.Override.ActiveCellAppearance = appearance12;
-            appearance7.BackColor = System.Drawing.SystemColors.Highlight;
+            appearance7.BackColor = System.Drawing.Color.LightSkyBlue;
             appearance7.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.Grid.DisplayLayout.Override.ActiveRowAppearance = appearance7;
             this.Grid.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted;
@@ -168,23 +176,63 @@
             this.Grid.DisplayLayout.Override.TemplateAddRowAppearance = appearance8;
             this.Grid.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
             this.Grid.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
-            this.Grid.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.Horizontal;
+            this.Grid.DisplayLayout.ViewStyle = Infragistics.Win.UltraWinGrid.ViewStyle.SingleBand;
             this.Grid.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.Grid.Font = new System.Drawing.Font("FangSong", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Grid.Location = new System.Drawing.Point(0, 201);
             this.Grid.Name = "Grid";
             this.Grid.Size = new System.Drawing.Size(744, 234);
-            this.Grid.TabIndex = 7;
+            this.Grid.TabIndex = 66;
             this.Grid.Text = "ultraGrid1";
+            this.Grid.UseOsThemes = Infragistics.Win.DefaultableBoolean.True;
             // 
             // save
             // 
-            this.save.Location = new System.Drawing.Point(364, 125);
+            this.save.Location = new System.Drawing.Point(364, 122);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(75, 23);
-            this.save.TabIndex = 8;
+            this.save.TabIndex = 55;
             this.save.Text = "save";
             this.save.Click += new System.EventHandler(this.save_Click);
+            // 
+            // Label_Total
+            // 
+            this.Label_Total.Font = new System.Drawing.Font("FangSong", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Label_Total.Location = new System.Drawing.Point(549, 130);
+            this.Label_Total.Name = "Label_Total";
+            this.Label_Total.Size = new System.Drawing.Size(100, 23);
+            this.Label_Total.TabIndex = 9;
+            this.Label_Total.Text = "Total";
+            // 
+            // ultraLabel1
+            // 
+            this.ultraLabel1.Font = new System.Drawing.Font("FangSong", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.ultraLabel1.Location = new System.Drawing.Point(488, 130);
+            this.ultraLabel1.Name = "ultraLabel1";
+            this.ultraLabel1.Size = new System.Drawing.Size(55, 23);
+            this.ultraLabel1.TabIndex = 10;
+            this.ultraLabel1.Text = "Total:";
+            // 
+            // Text_TipName1
+            // 
+            this.Text_TipName1.Location = new System.Drawing.Point(124, 48);
+            this.Text_TipName1.Name = "Text_TipName1";
+            this.Text_TipName1.Size = new System.Drawing.Size(134, 21);
+            this.Text_TipName1.TabIndex = 1;
+            // 
+            // Text_TipName2
+            // 
+            this.Text_TipName2.Location = new System.Drawing.Point(124, 88);
+            this.Text_TipName2.Name = "Text_TipName2";
+            this.Text_TipName2.Size = new System.Drawing.Size(134, 21);
+            this.Text_TipName2.TabIndex = 7;
+            // 
+            // Text_TipName3
+            // 
+            this.Text_TipName3.Location = new System.Drawing.Point(124, 124);
+            this.Text_TipName3.Name = "Text_TipName3";
+            this.Text_TipName3.Size = new System.Drawing.Size(134, 21);
+            this.Text_TipName3.TabIndex = 19;
             // 
             // Form_Main
             // 
@@ -192,6 +240,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(744, 435);
+            this.Controls.Add(this.Text_TipName3);
+            this.Controls.Add(this.Text_TipName2);
+            this.Controls.Add(this.Text_TipName1);
+            this.Controls.Add(this.ultraLabel1);
+            this.Controls.Add(this.Label_Total);
             this.Controls.Add(this.save);
             this.Controls.Add(this.Grid);
             this.Controls.Add(this.search);
@@ -203,10 +256,14 @@
             this.Controls.Add(this.Lable_Tip1);
             this.Name = "Form_Main";
             this.Text = "main";
+            this.Load += new System.EventHandler(this.Form_Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Text_Tip1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Text_Tip2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Text_Tip3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Text_TipName1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Text_TipName2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Text_TipName3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,8 +278,13 @@
         private Infragistics.Win.UltraWinEditors.UltraTextEditor Text_Tip3;
         private Infragistics.Win.Misc.UltraLabel Lable_Tip3;
         private Infragistics.Win.Misc.UltraButton search;
-        private Infragistics.Win.UltraWinGrid.UltraGrid Grid;
         private Infragistics.Win.Misc.UltraButton save;
+        internal Infragistics.Win.UltraWinGrid.UltraGrid Grid;
+        private Infragistics.Win.Misc.UltraLabel Label_Total;
+        private Infragistics.Win.Misc.UltraLabel ultraLabel1;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor Text_TipName1;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor Text_TipName2;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor Text_TipName3;
     }
 }
 

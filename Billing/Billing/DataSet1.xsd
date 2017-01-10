@@ -19,9 +19,13 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="datetime" msdata:ReadOnly="true" msprop:Generator_UserColumnName="datetime" msprop:Generator_ColumnPropNameInRow="datetime" msprop:Generator_ColumnVarNameInTable="columndatetime" msprop:Generator_ColumnPropNameInTable="datetimeColumn" type="xs:string" />
+              <xs:element name="Tip1Text" msprop:Generator_UserColumnName="Tip1Text" msprop:Generator_ColumnVarNameInTable="columnTip1Text" msprop:Generator_ColumnPropNameInRow="Tip1Text" msprop:Generator_ColumnPropNameInTable="Tip1TextColumn" type="xs:string" default="" minOccurs="0" />
               <xs:element name="Tip1" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Tip1" msprop:Generator_ColumnPropNameInRow="Tip1" msprop:Generator_ColumnVarNameInTable="columnTip1" msprop:Generator_ColumnPropNameInTable="Tip1Column" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="Tip2Text" msprop:Generator_UserColumnName="Tip2Text" msprop:Generator_ColumnPropNameInRow="Tip2Text" msprop:Generator_ColumnVarNameInTable="columnTip2Text" msprop:Generator_ColumnPropNameInTable="Tip2TextColumn" type="xs:string" default="" minOccurs="0" />
               <xs:element name="Tip2" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Tip2" msprop:Generator_ColumnPropNameInRow="Tip2" msprop:Generator_ColumnVarNameInTable="columnTip2" msprop:Generator_ColumnPropNameInTable="Tip2Column" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="Tip3Text" msprop:Generator_UserColumnName="Tip3Text" msprop:Generator_ColumnPropNameInRow="Tip3Text" msprop:Generator_ColumnVarNameInTable="columnTip3Text" msprop:Generator_ColumnPropNameInTable="Tip3TextColumn" type="xs:string" default="" minOccurs="0" />
               <xs:element name="Tip3" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Tip3" msprop:Generator_ColumnPropNameInRow="Tip3" msprop:Generator_ColumnVarNameInTable="columnTip3" msprop:Generator_ColumnPropNameInTable="Tip3Column" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInTable="TotalColumn" type="xs:string" default="0" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

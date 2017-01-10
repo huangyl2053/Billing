@@ -11,12 +11,12 @@ namespace entity
         private string _tip2 = "0";
         private string _tip3 = "0";
         private string _tip4 = "0";
-        private string _tip1Text;
-        private string _tip2Text;
-        private string _tip3Text;
-        private string _tip4Text;
+        private string _tip1Text=string.Empty;
+        private string _tip2Text = string.Empty;
+        private string _tip3Text = string.Empty;
+        private string _tip4Text = string.Empty;
         private string _total = "0";
-        private string _today;
+        private string _today = string.Empty;
 
         public string Datetime
         {

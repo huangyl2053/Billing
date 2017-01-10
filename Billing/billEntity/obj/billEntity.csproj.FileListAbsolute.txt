@@ -18,3 +18,6 @@ E:\files\bill\Billing\billEntity\bin\Debug\billEntity.pdb
 E:\files\bill\Billing\billEntity\obj\Debug\ResolveAssemblyReference.cache
 E:\files\bill\Billing\billEntity\obj\Debug\billEntity.dll
 E:\files\bill\Billing\billEntity\obj\Debug\billEntity.pdb
+E:\files\bill\fnl\billEntity.dll
+E:\files\bill\Billing\billEntity\obj\Release\ResolveAssemblyReference.cache
+E:\files\bill\Billing\billEntity\obj\Release\billEntity.dll

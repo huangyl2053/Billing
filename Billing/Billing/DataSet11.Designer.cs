@@ -264,11 +264,19 @@ namespace Billing {
             
             private global::System.Data.DataColumn columndatetime;
             
+            private global::System.Data.DataColumn columnTip1Text;
+            
             private global::System.Data.DataColumn columnTip1;
+            
+            private global::System.Data.DataColumn columnTip2Text;
             
             private global::System.Data.DataColumn columnTip2;
             
+            private global::System.Data.DataColumn columnTip3Text;
+            
             private global::System.Data.DataColumn columnTip3;
+            
+            private global::System.Data.DataColumn columnTotal;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public tableDataTable() {
@@ -308,9 +316,23 @@ namespace Billing {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn Tip1TextColumn {
+                get {
+                    return this.columnTip1Text;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public global::System.Data.DataColumn Tip1Column {
                 get {
                     return this.columnTip1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn Tip2TextColumn {
+                get {
+                    return this.columnTip2Text;
                 }
             }
             
@@ -322,9 +344,23 @@ namespace Billing {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn Tip3TextColumn {
+                get {
+                    return this.columnTip3Text;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public global::System.Data.DataColumn Tip3Column {
                 get {
                     return this.columnTip3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn TotalColumn {
+                get {
+                    return this.columnTotal;
                 }
             }
             
@@ -357,13 +393,17 @@ namespace Billing {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public tableRow AddtableRow(string datetime, string Tip1, string Tip2, string Tip3) {
+            public tableRow AddtableRow(string datetime, string Tip1Text, string Tip1, string Tip2Text, string Tip2, string Tip3Text, string Tip3, string Total) {
                 tableRow rowtableRow = ((tableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         datetime,
+                        Tip1Text,
                         Tip1,
+                        Tip2Text,
                         Tip2,
-                        Tip3};
+                        Tip3Text,
+                        Tip3,
+                        Total};
                 rowtableRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtableRow);
                 return rowtableRow;
@@ -395,32 +435,48 @@ namespace Billing {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             internal void InitVars() {
                 this.columndatetime = base.Columns["datetime"];
+                this.columnTip1Text = base.Columns["Tip1Text"];
                 this.columnTip1 = base.Columns["Tip1"];
+                this.columnTip2Text = base.Columns["Tip2Text"];
                 this.columnTip2 = base.Columns["Tip2"];
+                this.columnTip3Text = base.Columns["Tip3Text"];
                 this.columnTip3 = base.Columns["Tip3"];
+                this.columnTotal = base.Columns["Total"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             private void InitClass() {
                 this.columndatetime = new global::System.Data.DataColumn("datetime", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndatetime);
+                this.columnTip1Text = new global::System.Data.DataColumn("Tip1Text", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTip1Text);
                 this.columnTip1 = new global::System.Data.DataColumn("Tip1", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTip1);
+                this.columnTip2Text = new global::System.Data.DataColumn("Tip2Text", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTip2Text);
                 this.columnTip2 = new global::System.Data.DataColumn("Tip2", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTip2);
+                this.columnTip3Text = new global::System.Data.DataColumn("Tip3Text", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTip3Text);
                 this.columnTip3 = new global::System.Data.DataColumn("Tip3", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTip3);
+                this.columnTotal = new global::System.Data.DataColumn("Total", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotal);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("tableKey1", new global::System.Data.DataColumn[] {
                                 this.columndatetime}, true));
                 this.columndatetime.AllowDBNull = false;
                 this.columndatetime.ReadOnly = true;
                 this.columndatetime.Unique = true;
+                this.columnTip1Text.DefaultValue = ((string)(""));
                 this.columnTip1.ReadOnly = true;
                 this.columnTip1.DefaultValue = ((string)("0"));
+                this.columnTip2Text.DefaultValue = ((string)(""));
                 this.columnTip2.ReadOnly = true;
                 this.columnTip2.DefaultValue = ((string)("0"));
+                this.columnTip3Text.DefaultValue = ((string)(""));
                 this.columnTip3.ReadOnly = true;
                 this.columnTip3.DefaultValue = ((string)("0"));
+                this.columnTotal.DefaultValue = ((string)("0"));
                 this.CaseSensitive = false;
             }
             
@@ -564,6 +620,21 @@ namespace Billing {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string Tip1Text {
+                get {
+                    try {
+                        return ((string)(this[this.tabletable.Tip1TextColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("テーブル \'table\' にある列 \'Tip1Text\' の値は DBNull です。", e);
+                    }
+                }
+                set {
+                    this[this.tabletable.Tip1TextColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public string Tip1 {
                 get {
                     try {
@@ -575,6 +646,21 @@ namespace Billing {
                 }
                 set {
                     this[this.tabletable.Tip1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string Tip2Text {
+                get {
+                    try {
+                        return ((string)(this[this.tabletable.Tip2TextColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("テーブル \'table\' にある列 \'Tip2Text\' の値は DBNull です。", e);
+                    }
+                }
+                set {
+                    this[this.tabletable.Tip2TextColumn] = value;
                 }
             }
             
@@ -594,6 +680,21 @@ namespace Billing {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string Tip3Text {
+                get {
+                    try {
+                        return ((string)(this[this.tabletable.Tip3TextColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("テーブル \'table\' にある列 \'Tip3Text\' の値は DBNull です。", e);
+                    }
+                }
+                set {
+                    this[this.tabletable.Tip3TextColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public string Tip3 {
                 get {
                     try {
@@ -609,6 +710,31 @@ namespace Billing {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string Total {
+                get {
+                    try {
+                        return ((string)(this[this.tabletable.TotalColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("テーブル \'table\' にある列 \'Total\' の値は DBNull です。", e);
+                    }
+                }
+                set {
+                    this[this.tabletable.TotalColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsTip1TextNull() {
+                return this.IsNull(this.tabletable.Tip1TextColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetTip1TextNull() {
+                this[this.tabletable.Tip1TextColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public bool IsTip1Null() {
                 return this.IsNull(this.tabletable.Tip1Column);
             }
@@ -616,6 +742,16 @@ namespace Billing {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public void SetTip1Null() {
                 this[this.tabletable.Tip1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsTip2TextNull() {
+                return this.IsNull(this.tabletable.Tip2TextColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetTip2TextNull() {
+                this[this.tabletable.Tip2TextColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -629,6 +765,16 @@ namespace Billing {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsTip3TextNull() {
+                return this.IsNull(this.tabletable.Tip3TextColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetTip3TextNull() {
+                this[this.tabletable.Tip3TextColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public bool IsTip3Null() {
                 return this.IsNull(this.tabletable.Tip3Column);
             }
@@ -636,6 +782,16 @@ namespace Billing {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public void SetTip3Null() {
                 this[this.tabletable.Tip3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsTotalNull() {
+                return this.IsNull(this.tabletable.TotalColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetTotalNull() {
+                this[this.tabletable.TotalColumn] = global::System.Convert.DBNull;
             }
         }
         

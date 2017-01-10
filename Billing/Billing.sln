@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billing", "Billing\Billing.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "billEntity", "billEntity\billEntity.csproj", "{935AC43E-3B80-42B4-AA03-3F671A9B5842}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "serverTest", "server\serverTest.csproj", "{AD5A27FB-7D6A-4BF8-BEF9-DB8D9362EB90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "server", "server\server.csproj", "{AD5A27FB-7D6A-4BF8-BEF9-DB8D9362EB90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -38,3 +38,10 @@ E:\files\bill\Billing\Billing\obj\Debug\Billing.Form_Main.resources
 E:\files\bill\Billing\Billing\obj\Debug\Billing.Properties.Resources.resources
 E:\files\bill\Billing\Billing\obj\Debug\Billing.csproj.GenerateResource.Cache
 E:\files\bill\Billing\Billing\obj\Debug\Billing.exe.licenses
+E:\files\bill\fnl\Billing.exe
+E:\files\bill\Billing\Billing\obj\Release\ResolveAssemblyReference.cache
+E:\files\bill\Billing\Billing\obj\Release\Billing.Form_Main.resources
+E:\files\bill\Billing\Billing\obj\Release\Billing.Properties.Resources.resources
+E:\files\bill\Billing\Billing\obj\Release\Billing.csproj.GenerateResource.Cache
+E:\files\bill\Billing\Billing\obj\Release\Billing.exe.licenses
+E:\files\bill\Billing\Billing\obj\Release\Billing.exe

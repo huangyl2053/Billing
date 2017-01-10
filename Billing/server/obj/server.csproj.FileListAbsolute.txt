@@ -3,3 +3,14 @@ E:\files\Billing\server\server\bin\Debug\server.pdb
 E:\files\Billing\server\server\obj\Debug\ResolveAssemblyReference.cache
 E:\files\Billing\server\server\obj\Debug\server.dll
 E:\files\Billing\server\server\obj\Debug\server.pdb
+E:\files\bill\Billing\server\bin\Debug\server.dll
+E:\files\bill\Billing\server\bin\Debug\server.pdb
+E:\files\bill\Billing\server\bin\Debug\billEntity.dll
+E:\files\bill\Billing\server\bin\Debug\MySql.Data.dll
+E:\files\bill\Billing\server\bin\Debug\billEntity.pdb
+E:\files\bill\Billing\server\obj\Debug\ResolveAssemblyReference.cache
+E:\files\bill\Billing\server\obj\Debug\server.dll
+E:\files\bill\Billing\server\obj\Debug\server.pdb
+E:\files\bill\fnl\server.dll
+E:\files\bill\Billing\server\obj\Release\ResolveAssemblyReference.cache
+E:\files\bill\Billing\server\obj\Release\server.dll
